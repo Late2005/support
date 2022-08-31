@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+  <head>
+      <title>Uw supportvraag</title>
+      <meta charset="utf-8">
+      <meta name="keywords" content="CLEAR Solutions,CLEAR,Solutions,Exact,Exact Globe,Exact Synergy Enterprise,Synergy,Sumatra,Elvy,Orbis,support,supportvraag,vraag,hulp,ondersteuning">
+      <meta name="description" content="Stel hier uw vragen over Exact of Exact gerelateerde software aan CLEAR Solutions. Onze specialisten helpen u graag.">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700%7CRoboto+Condensed:400,600,700" type="text/css" media="all">
+
+      <style>
+        * {font-family: Roboto, Verdana, Arial, Sans-serif;}
+        html {box-sizing: border-box; border-collapse: collapse;}
+        body {width: 100%; height: 100%; min-height: 100vh; margin: 0%; padding: 0%;background-image: url(https://www.clear-solutions.nl/wp-content/uploads/cs-hero-drop-us-a-mail.png);background-repeat: no-repeat; background-size: cover;color: white;}
+
+        @media only screen and (max-width: 600px) {
+
+        /* Mobile first */
+
+        header {display: flex; justify-content: space-between; align-items: center;height: 20vh; min-height: 30px; background-color: #30303bcc;}
+        header h1 {display: inline-block; margin: 4vmin; font-size: 7.5vmin; color: #ee2c49;}
+        #logo {display: inline-block; margin: 4vmin; padding: 0%; width: 45vmin; max-width: 250px; height: auto;}
+        #wrapper {position: relative; max-width: 100vw; height: 100%; min-height: 80vh; background-color: #30303bcc;border-right: 1vw solid #ee2c49;border-bottom: 1vw solid #30303b;}
+        .row {width: 98%; margin: auto;}
+        fieldset {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; margin: 0%; padding: 0%; overflow: auto; border-radius: 5px;}
+        #supportform {display: flex; flex-direction: column; flex-wrap: nowrap;}
+        #contactdata {}
+        form legend {}
+        form span {display: inline-block; width: 22.5%;margin: 1vmin 2vmin; padding: 1.5%;font-size: 12px;text-align: left;}
+        .form {display: inline-block;width: 60%;min-width: 200px;margin: 1vmin 2vmin; padding: 1.5%;border-radius: 5px;}
+        .form-label {display: inline-block;width: 80%;min-width: 100px;margin: 1vmin 2vmin; padding: 1.5%;}
+        textarea {max-width: 320px;max-height: 400px;}
+        #form-button {display: flex; justify-content: flex-end;margin: 4vmin;}
+        .form-button {width: 30vw;height: 7.5vh;border: none; border-radius: 5px;background-color: #ee2c49;font-weight: bold;color: white;}
+        .form-button:active {background-color: white;color: #30303b;}
+        .form-button:hover {background-color: white;color: #ee2c49;}
+
+        }
+        </style>
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="https://www.clear-solutions.nl/wp-content/uploads/clear-solutions-uppercase.svg" title="CLEAR Solutions logo" alt="CLEAR Solutions logo">
+      <h1>SUPPORT</h1>
+    </header>
+    <div id="wrapper">
+      <div class="row">
+
+        <form id="supportform" action="https://formspree.io/f/xknegayp" method="post">
+
+          <fieldset id="contactdata">
+            <legend>Contactgegevens</legend>
+            <label class="form-label" for="company">Bedrijfsnaam&nbsp;:&nbsp;</label><input type="text" id="company" class="form" name="company" placeholder="Uw bedrijfsnaam..." size="50" maxlength="30"><span>&nbsp;(Optioneel)</span><br>
+            <label class="form-label" for="contact">Contactpersoon&nbsp;:&nbsp;</label><input type="text" id="contact" class="form" name="contact" placeholder="Uw naam" size="50" maxlength="40" required><br>
+            <label class="form-label" for="email">e-Mailadres&nbsp;:&nbsp;</label><input type="text" id="email" class="form" name="email" placeholder="Uw e-mailadres..." size="50" maxlength="50"><br>
+            <label class="form-label" for="directnumber">Direct/Mobiel telefoonnummer&nbsp;:&nbsp;</label><input type="tel" id="directnumber" class="form" name="directnumber" placeholder="Uw telefoonnummer..." size="50" maxlength="10" required><br>
+          </fieldset>
+          <br>
+          <fieldset id="question">
+            <legend>Uw vraag</legend>
+            <p class="form-label">Ik wil graag een&nbsp;:&nbsp;</p>
+            <select class="form" name="type" required>
+              <option value="" selected>-</option>
+              <option value="verstoring">verstoring melden</option>
+              <option value="functioneel">functionele vraag stellen</option>
+              <option value="consultancy">consult/advies</option>
+              <option value="licentie">licentie activeren/inlezen</option>
+              <option value="rechten">gebruiker aanmaken/rechten toekennen</option>
+              <option value="overig">overige vraag stellen</option>
+            </select>
+            <br>
+            <p class="form-label">Mijn vraag gaat over&nbsp;:&nbsp;</p>
+            <select class="form" name="software" required>
+              <option value="" selected>-</option>
+              <option value="EG">Exact Globe</option>
+              <option value="ESE">Exact Synergy Enterprise</option>
+              <option value="Elvy">Elvy Factuurverwerking</option>
+              <option value="Orbis">Orbis BPA Platform</option>
+              <option value="Sumatra">Sumatra</option>
+              <option value="Anders">Andere software</option>
+            </select>
+            <br>
+            <label class="form-label" for="db">Administratienummer&nbsp;:&nbsp;</label><input type="number" id="db" class="form" name="db" min="001" max="999" placeholder="###"><span>&nbsp;(Exact Globe)</span><br>
+            <label class="form-label" for="omschrijving">Omschrijving&nbsp;:&nbsp;</label><input type="text" id="omschrijving" class="form" name="omschrijving" placeholder="Stel uw vraag..." size="50" maxlength="50"><br>
+            <p class="form-label">Licht uw vraag hieronder toe&nbsp;:&nbsp;</p>
+            <textarea class="form" form="supportform" rows="7" id="toelichting" name="toelichting" maxlength="250">Type uw vraag hier... (Max. 250 tekens)</textarea>
+          </fieldset>
+            <br>
+            <fieldset id="details">
+              <legend>Details</legend>
+              <label class="form-label" for="datum">Probleem doet zich voor sinds&nbsp;:&nbsp;</label><input type="date" id="datum" class="form" name="datum" min="2022-08-01" max="2039-12-31"><br>
+              <p class="form-label">Het probleem doet zich voor bij&nbsp;:&nbsp;</p>
+              <select class="form" name="wie" required>
+                <option value="" selected>-</option>
+                <option value="alleen">mij</option>
+                <option value="enkelen">een collega</option>
+                <option value="sommigen">mij en een collega</option>
+                <option value="allen">alle collega's</option>
+              </select>
+              <br>
+              <p class="form-label">Mijn/onze taken zijn&nbsp;:&nbsp;</p>
+              <select class="form" name="ernst" required>
+                <option value="" selected>-</option>
+                <option value="laag">uitvoerbaar</option>
+                <option value="middel">uitvoerbaar via workaround</option>
+                <option value="hoog">gedeeltelijk niet uitvoerbaar</option>
+                <option value="urgent">volledig niet uitvoerbaar</option>
+              </select>
+              <br>
+              <label class="form-label" for="screen">Voeg hier uw volledige screenshot(s) toe&nbsp;:&nbsp;</label><input type="file" accept=".jpg,.jpeg,.png" max-input-size="2048" id="screen" class="form" name="screen" multiple><br>
+
+          </fieldset>
+          <div id="form-button">
+            <br><button class="form-button" type="submit">Indienen</button><br>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+  </body>
+
+
+</html>
